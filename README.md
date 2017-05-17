@@ -8,15 +8,18 @@ pod 'ZBarSDK', '~> 1.3.1'
 ```obj-c
 
 #import "JMQRScanVC.h"
-
 - (IBAction)btnClick:(id)sender {
     JMQRScanVC *vc = [JMQRScanVC ScanWithUIType:ScanUITypeZhiFuBao codeType:ScanCodeTypeQR doneBlock:^(NSString *resultStr) {
-        //识别成功回调
-         NSLog(@"%@",resultStr);
+        //扫码成功回调
+        NSLog(@"%@",resultStr);
         
+        //根据Sting创建QR图片
+        [self.qrImgView imageWithQRString:resultStr];
+
     }];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 
 ```
