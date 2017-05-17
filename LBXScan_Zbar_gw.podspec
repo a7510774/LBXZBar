@@ -9,8 +9,8 @@ Pod::Spec.new do |spec|
     spec.source       = {:git => 'https://github.com/a7510774/LBXZBar.git', :tag => spec.version}
     spec.requires_arc = true
 
-    spec.source_files = 'LBXZBar/LBXZbar/JMScanToWxZhifubao/*','LBXZBar/LBXZbar/LBXZBar/*','LBXZBar/LBXZbar/LBXUI/*.{h,m}'
-    spec.resource     = 'LBXZBar/LBXZbar/LBXUI/CodeScan.bundle'
+    spec.source_files = 'LBXZbar/JMScanToWxZhifubao/*','LBXZbar/LBXZBar/*','LBXZbar/LBXUI/*.{h,m}'
+    spec.resource     = 'LBXZbar/LBXUI/CodeScan.bundle'
     spec.dependency 'ZBarSDK', '~> 1.3.1'
     spec.libraries = 'iconv','z'
     spec.ios.frameworks = 'AVFoundation', 'CoreGraphics', 'CoreMedia'
