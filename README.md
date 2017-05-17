@@ -2,6 +2,9 @@
 Zbar扫码功能及UI封装，感谢https://github.com/MxABC/LBXScan
 
 # 使用介绍
+
+pod 'ZBarSDK', '~> 1.3.1'
+
 ```obj-c
 
 #import "JMQRScanVC.h"
