@@ -21,5 +21,11 @@ pod 'ZBarSDK', '~> 1.3.1'
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+    <!-- 相册 -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>App需要您的同意,才能访问相册</string>
+    <!-- 相机 -->
+    <key>NSCameraUsageDescription</key>
+    <string>App需要您的同意,才能访问相机</string>
 
 ```
